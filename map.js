@@ -10,6 +10,8 @@ const Diff = require('./diff')
 
 class MapLoader extends EventEmitter {
 	constructor(db, map_name) {
+		super()
+
 		this._sync(db, map_name)
 	}
 
