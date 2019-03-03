@@ -2,9 +2,7 @@
 // It watches the database for changes to the maps nodes
 // and updates them accordingly
 
-const require1 = require('./require1')
-
-const EventEmitter = require1('eventemitter3', 'events')
+const EventEmitter = require('eventemitter3')
 
 const Diff = require('./diff')
 
