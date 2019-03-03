@@ -42,6 +42,7 @@ class MapLoader extends EventEmitter {
 				const node = this.nodes[id]
 				node.id = id
 				node.data = doc.data()
+				node.data.id = id
 				node.parents = node.data['extends'] || []
 				node.entity = null
 				node._needs_refresh = true
