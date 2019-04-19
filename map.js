@@ -14,7 +14,7 @@ class MapLoader extends EventEmitter {
 	}
 
 	sync(map_name) {
-		this.db.collections('maps').doc(map_name).onSnapshot(
+		this.db.collection('maps').doc(map_name).onSnapshot(
 			doc => {
 				const root_node = doc.data().root
 				
