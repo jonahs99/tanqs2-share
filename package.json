@@ -1,6 +1,6 @@
 {
   "name": "@jonahs/tanqs2-share",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "index.js",
   "dependencies": {
     "eventemitter3": "^3.1.0"

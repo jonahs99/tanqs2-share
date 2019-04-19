@@ -25,7 +25,7 @@ class MapLoader extends EventEmitter {
 	_resolve(node) {
 		switch(node.type) {
 			case 'group':
-				const child_entities = node.children.map(child => this._resolve(child))
+				const child_entities = Object.values(node.children).map(child => this._resolve(child))
 				return [].concat(...child_entities)
 
 			case 'instance':
